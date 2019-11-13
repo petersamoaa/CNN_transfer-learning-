@@ -1,2 +1,5 @@
 # CNN_transfer-learning-
-Image classification using transfer learning 
+Image classification using transfer learning. In this project, we will use a pre-trained model which is ResNet50 from the TensorFlow in order to classify the images. Here we don't need to train the model from the scratch by initializing it with random weights. Rather we will use the intelligent (wights) of the pre-trained model for image classification and then customize it to our model. 
+To simplify things a bit, we will build a model for image classification. This model (deep neural network) had CNN networks and then a fully connected dense network build upon it. CNN is used for extract features from the image, then add nonlinearity and finally do pooling and flatten the features and feed them up to the fully dense layers. Here as long as we are also dealing with image, we can get the part of CNN from the pre-trained model, then add to it our dense layer just to customize the model to our use case. In this case, we save a lot of time needed for trained CNN, as well as resources for training.
+Bear in mind, that we will use the same configuration of the trained model, otherwise, we will not be able to derive the features from it for our images.
+We will see that our custom model will reach a high accuracy within only 5 epochs (epochs that needed to train the dense layers only.)
